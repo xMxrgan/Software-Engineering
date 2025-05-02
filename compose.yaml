@@ -8,6 +8,11 @@ services:
     depends_on:
       db:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   db:
     image: mariadb
@@ -19,7 +24,7 @@ services:
       - db-data:/var/lib/mysql/data
     environment:
       - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
-      - MYSQL_DATABASE=SoftwareEngineeringProject
+      - MYSQL_DATABASE=TelemedicinaProject
     expose:
       - 3306
     healthcheck:
