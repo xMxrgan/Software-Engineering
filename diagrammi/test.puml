@@ -1,0 +1,18 @@
+@startuml usercase
+left to right direction
+
+:Paziente: --> (Inserire glicemie prima e dopo i pasti)
+:Paziente: --> (Aggiungere sintomi)
+:Paziente: --> (Aggiungere patologie)
+:Paziente: --> (Aggiungere terapie seguite)
+
+:Dottore: --> (Inserire/Modificare terapie)
+:Dottore: --> (Inserire fattori di rischio)
+:Dottore: --> (Inserire malattie pregresse)
+:Dottore: --> (Ricevere segnalazioni glicemie anomale)
+:Dottore: --> (Inserire comorbidità presenti)
+:Dottore: --> (Visualizzazione dati)
+
+:Amministratore: --> (Inserire dati iniziali per autenticazione di pazienti e medici)
+
+@enduml
