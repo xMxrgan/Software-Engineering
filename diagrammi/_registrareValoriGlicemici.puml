@@ -1,0 +1,9 @@
+@startuml registrareValoriGlicemici
+
+mainframe **Registrare valori glicemici pre/post pasto** 
+text "ID" {
+  UC-01
+}
+
+
+@enduml
