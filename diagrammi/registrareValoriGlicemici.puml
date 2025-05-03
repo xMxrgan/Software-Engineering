@@ -1,31 +1,31 @@
-@startuml registrareValoriGlicemici
-hide stereotypes
+@startuml registrazioneValoreGlicemico
+hide circle
+
 skinparam class {
   BackgroundColor White
   BorderColor Black
 }
 
 class "Caso d'uso: **Registrare valori glicemici pre/post pasto**" {
-    -- ID  --
-  - UC-01
-    -- Attori --
-  - Paziente
-  - Sistema
-
-    -- Precondizioni --
-  - Paziente autenticato
-  - Valore glicemico disponibile
-
-    -- Sequenza degli eventi --
+  **ID**: 
+  UC-01
+  --
+  **Attori**:
+  Paziente, Sistema
+  --
+  **Precondizioni**:
+  1. Paziente autenticato
+  --
+  **Sequenza di eventi**:
   1. Selezione tipo misurazione (pre/post pasto)
   2. Inserimento valore glicemico e orario
   3. Validazione e salvataggio
   4. Controllo soglie
   5. Eventuale notifica al medico
-
-    -- Postcondizioni --
-  - Valore salvato con data/ora
-  - Sistema pronto ad analizzare dati
-  - Medico può consultare le misurazioni
+  --
+  **Postcondizioni**:
+  1. Valore salvato con data/ora
+  2. Sistema pronto ad analizzare dati
+  3. Medico può consultare le misurazioni
 }
 @enduml

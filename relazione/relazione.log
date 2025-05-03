@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.29)  2 MAY 2025 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.4.29)  3 MAY 2025 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -873,14 +873,20 @@ l.56 \include{1-Struttura del progetto}
 [3]
 \openout2 = `2-Prova.aux'.
 
- (./2-Prova.tex)
+ (./2-Prova.tex
+<figures/resistrareValoriGlicemici.png, id=62, 413.545pt x 334.24875pt>
+File: figures/resistrareValoriGlicemici.png Graphic file (type png)
+<use figures/resistrareValoriGlicemici.png>
+Package pdftex.def Info: figures/resistrareValoriGlicemici.png  used on input line 7.
+(pdftex.def)             Requested size: 413.54398pt x 334.24792pt.
+)
 
 [4
 
 
 
-]
-runsystem(latexminted cleantemp  --timestamp 20250502153409 43B2D6B3367A8101D0F5BF37BBB29E27)...executed safely (allowed).
+ <./figures/resistrareValoriGlicemici.png (PNG copy)>]
+runsystem(latexminted cleantemp  --timestamp 20250503150202 43B2D6B3367A8101D0F5BF37BBB29E27)...executed safely (allowed).
 
  (./relazione.aux (./title.aux) (./1-Struttura del progetto.aux) (./2-Prova.aux))
  ***********
@@ -891,18 +897,18 @@ Package rerunfilecheck Info: File `relazione.out' has not changed.
 (rerunfilecheck)             Checksum: 362EF038CC639EFDD73F1AE31C9D1614;905.
  ) 
 Here is how much of TeX's memory you used:
- 31005 strings out of 473190
- 609058 string characters out of 5715800
+ 31013 strings out of 473190
+ 609375 string characters out of 5715800
  1135854 words of memory out of 5000000
- 53699 multiletter control sequences out of 15000+600000
+ 53706 multiletter control sequences out of 15000+600000
  567894 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,5n,110p,633b,619s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on relazione.pdf (5 pages, 235229 bytes).
+Output written on relazione.pdf (5 pages, 260604 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 97 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

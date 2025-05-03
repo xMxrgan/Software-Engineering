@@ -8,7 +8,7 @@ actor Amministratore
 rectangle "Sistema di Monitoraggio Terapeutico" {
 
 :Paziente: -- (Registrare valori glicemici \n pre/post pasto)
-:Paziente: -- (Aggiungere sntomi, patologie e/o \n terapie concomitanti)
+:Paziente: -- (Aggiungere sintomi, patologie e/o \n terapie concomitanti)
 :Paziente: -- (Inserire aderenza alla terapia)
 
 :Diabetologo: -- (Gestire piano terapeutico)

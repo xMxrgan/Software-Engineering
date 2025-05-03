@@ -432,6 +432,11 @@ OUTPUT 2-Prova.aux
 INPUT ./2-Prova.tex
 INPUT ./2-Prova.tex
 INPUT 2-Prova.tex
+INPUT ./figures/resistrareValoriGlicemici.png
+INPUT ./figures/resistrareValoriGlicemici.png
+INPUT ./figures/resistrareValoriGlicemici.png
+INPUT ./figures/resistrareValoriGlicemici.png
+INPUT ./figures/resistrareValoriGlicemici.png
 INPUT relazione.aux
 INPUT ./title.aux
 INPUT ./title.aux
