@@ -1,0 +1,29 @@
+@startuml ricezioniRilevazioniGlicemiche
+hide circle
+
+skinparam class {
+  BackgroundColor White
+  BorderColor Black
+}
+
+class "Caso d'uso: **Ricevzione delle rilevazioni glicemiche**" {
+  **ID**: 
+  UC-06
+  --
+  **Attori**:
+  Diabetologo, Sistema
+  --
+  **Precondizioni**:
+  1. Diabetologo autenticato
+  --
+  **Sequenza di eventi**:
+  1. Ricezione rilevazioni glicemiche
+  2. Validazione e salvataggio
+  3. Eventuale notifica al paziente
+  --
+  **Postcondizioni**:
+  1. Inserimento salvato con data/ora
+  2. Sistema pronto ad analizzare dati
+  3. Paziente può visualizzare i dati inseriti
+}
+@enduml
