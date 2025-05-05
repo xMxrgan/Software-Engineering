@@ -19,13 +19,12 @@ rectangle "Sistema di Monitoraggio Terapeutico" {
 :Amministratore: -- (Inserire dati iniziali per autenticazione di pazienti e medici)
 
 (Inserire aderenza alla terapia) ..> (Autenticazione utente) : <<include>>
-(Aggiungere sntomi, patologie e/o \n terapie concomitanti) ..> (Autenticazione utente)
-(Registrare valori glicemici \n pre/post pasto) ..> (Autenticazione utente)
-(Gestire piano terapeutico) ..> (Autenticazione utente)
-(Ricevere segnalazioni \n glicemie anomale) ..> (Autenticazione utente)
-(Inserire fattori di rischio, \n malattie pregresse e comorbidità) ..> (Autenticazione utente)
-(Visualizzare dati clinici) ..> (Autenticazione utente)
-
+(Registrare valori glicemici \n pre/post pasto) ..> (Autenticazione utente) : <<include>>
+(Gestire piano terapeutico) ..> (Autenticazione utente) : <<include>>
+(Ricevere segnalazioni \n glicemie anomale) ..> (Autenticazione utente) : <<include>>
+(Inserire fattori di rischio, \n malattie pregresse e comorbidità) ..> (Autenticazione utente) : <<include>>
+(Visualizzare dati clinici) ..> (Autenticazione utente)  : <<include>>
+(Aggiungere sintomi, patologie e/o \n terapie concomitanti) ..> (Autenticazione utente) : <<include>>
 
 
 }
