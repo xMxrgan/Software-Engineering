@@ -1,4 +1,4 @@
-package JavaFXApp.src;
+package JavaFXApp.src.com;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
