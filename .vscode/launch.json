@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "JavaFXApp.src.com.Main",
+            "projectName": "Telemedicina_e51e12f"
+        },
+        {
+            "type": "java",
+            "name": "Esegui JavaFX",
+             "request": "launch",
+            "mainClass": "com.Main",
+            "projectName": "JavaFXApp",
+            "vmArgs": "--module-path /Users/auroraleardini/javafx-sdk-24.0.1/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+  }
+  
