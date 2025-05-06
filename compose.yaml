@@ -4,12 +4,12 @@ services:
             context: .
             dockerfile: docker/Dockerfile
         ports:
-            - "8000:8000"
+            - "8000:8080"
         depends_on:
             db:
                 condition: service_healthy
         healthcheck:
-            test: ["CMD", "curl", "-f", "http://localhost:8000"]
+            test: ["CMD", "curl", "-f", "http://localhost:8080"]
             interval: 10s
             timeout: 5s
             retries: 5
