@@ -2,4 +2,4 @@
 JavaFXApp/javafx-sdk-24.0.1/legal/
 JavaFXApp/bin/.idea
 JavaFXApp/javafx-sdk-24.0.1/lib/*.dylib
-JavaFXApp/bin/JavaFXApp
+JavaFXApp/bin/JavaFXApp/src/com/*.class

@@ -10,13 +10,11 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Button button = new Button("Cliccami!");
-        button.setOnAction(e -> System.out.println("Ciao JavaFX!"));
 
-        StackPane root = new StackPane(button);
+        StackPane root = new StackPane();
         Scene scene = new Scene(root, 300, 200);
 
-        primaryStage.setTitle("App JavaFX");
+        primaryStage.setTitle("Telemedicina");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
