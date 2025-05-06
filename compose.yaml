@@ -1,41 +1,53 @@
-services:
-  server:
-    build:
-      context: .
-      dockerfile: docker/Dockerfile
-    ports:
-      - 8000:8000
-    depends_on:
-      db:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+version: "3.8"
 
-  db:
-    image: mariadb
-    restart: always
-    user: root
-    secrets:
-      - db-password
-    volumes:
-      - db-data:/var/lib/mysql/data
-    environment:
-      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
-      - MYSQL_DATABASE=TelemedicinaProject
-    expose:
-      - 3306
-    healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
+services:
+    server:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        ports:
+            - 8000:8000
+        depends_on:
+            db:
+                condition: service_healthy
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:8000"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+        environment:
+            - DB_USERNAME=root
+            - DB_PASSWORD_FILE=/run/secrets/db-password
+
+    db:
+        image: mysql
+        restart: always
+        user: root
+        secrets:
+            - db-password
+        volumes:
+            - db-data:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
+            - MYSQL_DATABASE=TelemedicinaProject
+        expose:
+            - 3306
+        healthcheck:
+            test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - 8080:80
+        environment:
+            - PMA_ARBITRARY=1
 
 volumes:
-  db-data:
-
+    db-data:
 secrets:
-  db-password:
-    file: ./docker/password.txt
+    db-password:
+        file: ./docker/password.txt
