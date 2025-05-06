@@ -1,0 +1,82 @@
+services:
+    server:
+        build:
+            context: .
+            dockerfile: docker/Dockerfile
+        ports:
+            - "8000:8080"
+        depends_on:
+            db:
+                condition: service_healthy
+        healthcheck:
+            test: ["CMD", "curl", "-f", "http://localhost:8080"]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+        environment:
+            - DB_USERNAME=root
+            - DB_PASSWORD_FILE=/run/secrets/db-password
+        secrets:
+            - db-password
+        networks:
+            - mysql_network
+
+    db:
+        image: mysql
+        restart: always
+        user: root
+        secrets:
+            - db-password
+        volumes:
+            - db-data:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
+            - MYSQL_DATABASE=Telemedicina
+        expose:
+            - 3306
+        healthcheck:
+            test:
+                [
+                    "CMD",
+                    "mysqladmin",
+                    "ping",
+                    "-h",
+                    "localhost",
+                    "-uroot",
+                    "-p$$(cat /run/secrets/db-password)",
+                ]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+        networks:
+            - mysql_network
+
+    php:
+        image: php:8.0-fpm
+        depends_on:
+            - db
+        networks:
+            - mysql_network
+
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - "8080:80"
+        environment:
+            - PMA_HOST=db
+            - PMA_PORT=3306
+        depends_on:
+            - db
+        networks:
+            - mysql_network
+
+volumes:
+    db-data:
+
+networks:
+    mysql_network:
+
+secrets:
+    db-password:
+        file: ./docker/password.txt

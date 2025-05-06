@@ -1,0 +1,29 @@
+@startuml inserimentoSintomiPatologie
+hide circle
+
+skinparam class {
+  BackgroundColor White
+  BorderColor Black
+}
+
+class "Caso d'uso: **Inserimento sintomi e patologie concomitanti**" {
+  **ID**: 
+  UC-02
+  --
+  **Attori**:
+  Paziente, Sistema
+  --
+  **Precondizioni**:
+  1. Paziente autenticato
+  --
+  **Sequenza di eventi**:
+  1. Inserimento tipologia sintomi e patologie
+  2. Validazione e salvataggio
+  3. Eventuale notifica al medico
+  --
+  **Postcondizioni**:
+  1. Valore salvato con data/ora
+  2. Sistema pronto ad analizzare dati
+  3. Medico può visualizzare i dati inseriti
+}
+@enduml
