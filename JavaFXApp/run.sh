@@ -2,7 +2,7 @@
 
 # Percorsi
 OUT_DIR="bin"
-JAVAFX_LIB="/Users/auroraleardini/javafx-sdk-24.0.1/lib"
+JAVAFX_LIB="lib/javafx-sdk-24.0.1/lib"
 MAIN_CLASS="JavaFXApp.src.Main"  # Cambia se il tuo main ha un nome diverso
 
 
