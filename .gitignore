@@ -16,3 +16,4 @@ Telemedicina.iml
 .gitignore
 JavaFXApp/bin/JavaFXApp/src/Main.class
 >>>>>>> refs/remotes/origin/main
+/JavaFXApp/javafx-sdk-24.0.1/legal/
