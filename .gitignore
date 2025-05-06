@@ -1,3 +1,18 @@
 .DS_Store
 /bin/
+<<<<<<< HEAD
 .vendor
+=======
+Telemedicina.iml
+.gitignore
+.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.gitignore
+.idea/libraries/lib.xml
+.gitignore
+.gitignore
+.idea/vcs.xml
+.gitignore
+JavaFXApp/bin/JavaFXApp/src/Main.class
+>>>>>>> refs/remotes/origin/main
