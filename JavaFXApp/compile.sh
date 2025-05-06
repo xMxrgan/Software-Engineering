@@ -3,7 +3,11 @@
 # Percorsi
 SRC_DIR="src"
 OUT_DIR="bin"
+<<<<<<< HEAD
 JAVAFX_LIB="/lib/javafx-sdk-24.0.1/lib"
+=======
+JAVAFX_LIB="lib/javafx-sdk-24.0.1/lib"
+>>>>>>> refs/remotes/origin/main
 
 echo "🧹 Pulizia vecchi file..."
 rm -rf "$OUT_DIR"
