@@ -29,7 +29,7 @@ services:
             - db-data:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db-password
-            - MYSQL_DATABASE=TelemedicinaProject
+            - MYSQL_DATABASE=Telemedicina
         expose:
             - 3306
         healthcheck:
