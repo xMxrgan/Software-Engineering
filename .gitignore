@@ -1,3 +1,4 @@
 .DS_Store
 JavaFXApp/javafx-sdk-24.0.1/legal/
 JavaFXApp/bin/.idea
+JavaFXApp/javafx-sdk-24.0.1/lib/*.dylib
