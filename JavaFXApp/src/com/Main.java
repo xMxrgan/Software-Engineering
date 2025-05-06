@@ -1,18 +1,24 @@
 package JavaFXApp.src.com;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
+
+import java.io.IOException;
+import java.net.URL;
 
 public class Main extends Application {
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
 
-        StackPane root = new StackPane();
-        Scene scene = new Scene(root, 300, 200);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("../resource/fxml/LoginView.fxml"));
+        Parent root = loader.load();
+
+
+        Scene scene = new Scene(root, 800, 600);
 
         primaryStage.setTitle("Telemedicina");
         primaryStage.setScene(scene);
