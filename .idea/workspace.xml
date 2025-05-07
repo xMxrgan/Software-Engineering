@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="modifiche verie">
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/view/ViewNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/view/ViewNavigator.java" afterDir="false" />
-    </list>
+    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="file configurazione" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746562022379</updated>
       <workItem from="1746562023437" duration="628000" />
-      <workItem from="1746562656989" duration="41813000" />
+      <workItem from="1746562656989" duration="42374000" />
     </task>
     <task id="LOCAL-00001" summary="librerie aggiornate, main.xml e file .sh">
       <option name="closed" value="true" />
@@ -306,7 +304,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746634496569</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="modifica ViewNavigator.java">
+      <option name="closed" value="true" />
+      <created>1746635019921</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1746635019921</updated>
+    </task>
+    <task id="LOCAL-00025" summary="file configurazione">
+      <option name="closed" value="true" />
+      <created>1746635509454</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1746635509454</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +358,8 @@
     <MESSAGE value="modifica UserRepository.java per errore" />
     <MESSAGE value="modifica compile.sh" />
     <MESSAGE value="modifiche verie" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifiche verie" />
+    <MESSAGE value="modifica ViewNavigator.java" />
+    <MESSAGE value="file configurazione" />
+    <option name="LAST_COMMIT_MESSAGE" value="file configurazione" />
   </component>
 </project>
