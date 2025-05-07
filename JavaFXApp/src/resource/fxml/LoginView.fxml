@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="JavaFXApp.src.com.controller.PazienteMainView">
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="JavaFXApp.src.com.controller.ViewNavigator">
     <VBox spacing="15" alignment="CENTER" AnchorPane.topAnchor="30.0" AnchorPane.bottomAnchor="30.0"
           AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0">
 
@@ -16,9 +16,9 @@
             <TextField fx:id="usernameField" promptText="Inserisci il tuo username" />
 
             <Label text="Password" />
-            <PasswordField fx:id="passwordField" promptText="Inserisci la tua password" onAction="#showMainVeiw" />
+            <PasswordField fx:id="passwordField" promptText="Inserisci la tua password"/>
         </VBox>
 
-        <Button text="Accedi" maxWidth="100" fx:id="loginButton" />
+        <Button text="Accedi" maxWidth="100" fx:id="loginButton" onAction="#navigateToManyView" />
     </VBox>
-</AnchorPane>
+</StackPane>

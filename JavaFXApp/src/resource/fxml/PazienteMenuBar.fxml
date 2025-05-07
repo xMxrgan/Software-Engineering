@@ -3,8 +3,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 
-<HBox xmlns:fx="http://javafx.com/fxml" spacing="10">
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="10" fx:controller="JavaFXApp.src.com.controller.ViewNavigator">
     <Button text="Account" fx:id="accountButton"/>
     <Button text="Inserisci Valori" fx:id="valoriButton"/>
     <Button text="Inserisci Anomalie" fx:id="anomalieButton"/>
+    <Button text="Logout" fx:id="logoutButton" onAction="#navigateToLogin"/>
 </HBox>

@@ -1,5 +1,6 @@
 package JavaFXApp.src.com;
 
+import JavaFXApp.src.com.controller.ViewNavigator;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,18 +14,14 @@ import java.net.URL;
 
 public class Main extends Application {
 
+    private static Stage primaryStage;
+
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(Stage stage) throws IOException {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("../resource/fxml/LoginView.fxml"));
-        Parent root = loader.load();
+        ViewNavigator.setStage(stage);
+        ViewNavigator.loadView("LoginView.fxml");
 
-
-        Scene scene = new Scene(root, 800, 600);
-
-        primaryStage.setTitle("Telemedicina");
-        primaryStage.setScene(scene);
-        primaryStage.show();
     }
 
     public static void main(String[] args) {
