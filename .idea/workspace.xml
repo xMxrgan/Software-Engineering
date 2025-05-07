@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="modifica&#10;UserRepository.java&#10;User.java&#10;DatabaseManager.java&#10;&#10;query per refreshUserCache funzionante">
+    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="costruzione di LoginController.java">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaFXApp/bin/JavaFXApp/src/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/bin/JavaFXApp/src/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFXApp/compile.sh" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/compile.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFXApp/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/run.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/view/ViewNavigator.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/view/ViewNavigator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/resource/fxml/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/resource/fxml/LoginView.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.1150748",
     "settings.editor.selected.configurable": "project.propCompiler",
@@ -128,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746562022379</updated>
       <workItem from="1746562023437" duration="628000" />
-      <workItem from="1746562656989" duration="49518000" />
+      <workItem from="1746562656989" duration="51308000" />
     </task>
     <task id="LOCAL-00001" summary="librerie aggiornate, main.xml e file .sh">
       <option name="closed" value="true" />
@@ -378,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746645157881</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="costruzione di LoginController.java">
+      <option name="closed" value="true" />
+      <created>1746648187837</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1746648187837</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="librerie aggiornate, main.xml, lib.xml e file .sh" />
     <MESSAGE value="javaFX" />
     <MESSAGE value="git" />
     <MESSAGE value="main.class" />
@@ -421,6 +427,7 @@
     <MESSAGE value="modifica LogicalController" />
     <MESSAGE value="cartella css" />
     <MESSAGE value="modifica&#10;UserRepository.java&#10;User.java&#10;DatabaseManager.java&#10;&#10;query per refreshUserCache funzionante" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica&#10;UserRepository.java&#10;User.java&#10;DatabaseManager.java&#10;&#10;query per refreshUserCache funzionante" />
+    <MESSAGE value="costruzione di LoginController.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="costruzione di LoginController.java" />
   </component>
 </project>

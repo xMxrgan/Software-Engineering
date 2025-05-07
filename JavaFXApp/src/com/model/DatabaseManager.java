@@ -9,7 +9,7 @@ interface ResultSetProcessor<T> {
 }
 
 public class DatabaseManager {
-    private final String dbUrl = "jdbc:sqlite:" + "JavaFXApp/src/resource/database/Telemedicina.db";
+    private final String dbUrl = "jdbc:sqlite:" + "src/resource/database/Telemedicina.db";
 
     public DatabaseManager() {
         try {

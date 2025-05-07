@@ -1,5 +1,6 @@
 package JavaFXApp.src.com;
 
+
 import JavaFXApp.src.com.model.UserRepository;
 import JavaFXApp.src.com.view.ViewNavigator;
 import javafx.application.Application;
