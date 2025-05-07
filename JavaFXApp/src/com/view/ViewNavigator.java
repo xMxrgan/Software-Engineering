@@ -26,7 +26,7 @@ public class ViewNavigator {
     @FXML
     public static void loadView(String fxmlFile) {
         try {
-            FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource("JavaFXApp/src/resource/fxml/" + fxmlFile));
+            FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource("../../resource/fxml/" + fxmlFile));
             Parent root = loader.load();
 
             Scene scene = new Scene(root, 800, 600);
