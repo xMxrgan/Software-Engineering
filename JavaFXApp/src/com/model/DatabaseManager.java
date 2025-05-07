@@ -39,6 +39,7 @@ public class DatabaseManager {
 
 
     public static void main(String[] args) {
-        new UserRepository();
+        UserRepository test = new UserRepository();
+        System.out.println(test.toString());
     }
 }

@@ -7,6 +7,13 @@ public class UserRepository {
     private final DatabaseManager dbManager;
     private Map<Integer, User> userCache = new HashMap<>();
 
+    @Override
+    public String toString() {
+        return "UserRepository{" +
+                "userCache=" + userCache +
+                '}';
+    }
+
     public UserRepository() {
         this.dbManager = new DatabaseManager();
         refreshUserCache();

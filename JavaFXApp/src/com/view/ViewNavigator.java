@@ -46,22 +46,4 @@ public class ViewNavigator {
         loadView("LoginView.fxml");
     }
 
-
-    public void navigateToManyView(ActionEvent actionEvent) {
-        if(userRole!=null)
-            switch (userRole) {
-                case "Paziente":
-                    loadView("PazienteMainView.fxml");
-                    break;
-                case "Diabetologo":
-                    loadView("DiabetologoMainView.fxml");
-                    break;
-                case "Amministratore":
-                    loadView("AmministratoreMainView.fxml");
-                    break;
-                default:
-                    loadView("LoginView.fxml");
-                    break;
-            }
-    }
 }
