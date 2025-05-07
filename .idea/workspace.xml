@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="file configurazione">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="delate file di testo">
       <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746562022379</updated>
       <workItem from="1746562023437" duration="628000" />
-      <workItem from="1746562656989" duration="43477000" />
+      <workItem from="1746562656989" duration="43658000" />
     </task>
     <task id="LOCAL-00001" summary="librerie aggiornate, main.xml e file .sh">
       <option name="closed" value="true" />
@@ -339,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746635593078</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="delate file di testo">
+      <option name="closed" value="true" />
+      <created>1746636654021</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1746636654021</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +386,7 @@
     <MESSAGE value="modifiche verie" />
     <MESSAGE value="modifica ViewNavigator.java" />
     <MESSAGE value="file configurazione" />
-    <option name="LAST_COMMIT_MESSAGE" value="file configurazione" />
+    <MESSAGE value="delate file di testo" />
+    <option name="LAST_COMMIT_MESSAGE" value="delate file di testo" />
   </component>
 </project>
