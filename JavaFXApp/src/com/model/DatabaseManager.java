@@ -32,25 +32,7 @@ public class DatabaseManager {
     /**
      * Execute a query and process the results with a ResultSetProcessor
      */
-    public <T> T executeQuery(String sql, ResultSetProcessor<T> processor, Object... params) {
-        try (Connection conn = getConnection();
-             PreparedStatement pstmt = conn.prepareStatement(sql)) {
 
-            // Set parameters
-            for (int i = 0; i < params.length; i++) {
-                pstmt.setObject(i + 1, params[i]);
-            }
-
-            // Execute the query and process results
-            try (ResultSet rs = pstmt.executeQuery()) {
-                return processor.process(rs);
-            }
-
-        } catch (SQLException e) {
-            System.err.println("Error executing query: " + e.getMessage());
-            return null;
-        }
-    }
 
     public static void main(String[] args) {
         new DatabaseManager();
