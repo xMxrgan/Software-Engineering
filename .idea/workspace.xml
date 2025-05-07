@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="delate file di testo">
-      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/controller/LoginController.java" afterDir="false" />
+    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="modifica LogicalController">
+      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746562022379</updated>
       <workItem from="1746562023437" duration="628000" />
-      <workItem from="1746562656989" duration="43658000" />
+      <workItem from="1746562656989" duration="43904000" />
     </task>
     <task id="LOCAL-00001" summary="librerie aggiornate, main.xml e file .sh">
       <option name="closed" value="true" />
@@ -346,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746636654021</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="modifica LogicalController">
+      <option name="closed" value="true" />
+      <created>1746636818012</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1746636818012</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,6 +395,7 @@
     <MESSAGE value="modifica ViewNavigator.java" />
     <MESSAGE value="file configurazione" />
     <MESSAGE value="delate file di testo" />
-    <option name="LAST_COMMIT_MESSAGE" value="delate file di testo" />
+    <MESSAGE value="modifica LogicalController" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica LogicalController" />
   </component>
 </project>
