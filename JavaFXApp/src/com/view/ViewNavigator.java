@@ -1,9 +1,8 @@
-package JavaFXApp.src.com.controller;
+package JavaFXApp.src.com.view;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -36,10 +35,12 @@ public class ViewNavigator {
             Parent root = loader.load();
 
             Scene scene = new Scene(root, 800, 600);
+            scene.getStylesheets().add(ViewNavigator.class.getResource("/JavaFXApp/src/resource/css/style.css").toExternalForm());
 
             mainStage.setTitle("Telemedicina");
             mainStage.setScene(scene);
             mainStage.show();
+
 
         } catch (IOException e) {
             System.err.println("❌ Errore durante il caricamento della vista: " + fxmlFile);
