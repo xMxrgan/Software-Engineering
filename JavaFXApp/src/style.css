@@ -1,0 +1,117 @@
+/* Global Styles */
+.root {
+    -fx-font-family: 'Raleway', 'Segoe UI', Arial, sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: linear-gradient(to right, #C7C5F4, #776BCC);
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: white;
+    -fx-text-fill: #4C489D;
+    -fx-font-weight: bold;
+    -fx-padding: 12px 20px;
+    -fx-background-radius: 26px;
+    -fx-border-color: #D4D3E8;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, #5C5696, 4, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.2s;
+}
+
+.button:hover {
+    -fx-border-color: #6A679E;
+}
+
+/* Secondary Button */
+.button-secondary {
+    -fx-background-color: #6c757d;
+    -fx-text-fill: white;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #5a6268;
+}
+
+/* Success Button */
+.button-success {
+    -fx-background-color: #28a745;
+    -fx-text-fill: white;
+}
+
+.button-success:hover {
+    -fx-background-color: #218838;
+}
+
+/* Form Styles */
+.form-control {
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+    -fx-border-color: #D1D1D4;
+    -fx-border-width: 0 0 2px 0;
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #6c757d;
+    -fx-font-weight: bold;
+}
+
+.form-control:focused {
+    -fx-border-color: #6A679E;
+    -fx-effect: dropshadow(gaussian, rgba(90, 90, 150, 0.25), 0, 0, 0, 0);
+}
+
+.form-label {
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+/* Card Styles */
+.card {
+    -fx-background-color: linear-gradient(to right, #5D54A4, #7C78B8);
+    -fx-padding: 30px;
+    -fx-background-radius: 16px;
+    -fx-effect: dropshadow(gaussian, rgba(92, 86, 150, 0.5), 20, 0, 0, 5);
+}
+
+.card-header {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 10px 0;
+    -fx-border-color: transparent transparent #dee2e6 transparent;
+    -fx-border-width: 0 0 1px 0;
+    -fx-text-fill: white;
+}
+
+/* Navigation */
+.nav-container {
+    -fx-background-color: #5D54A4;
+    -fx-padding: 10px;
+}
+
+/* Alert Styles */
+.alert-success {
+    -fx-text-fill: #155724;
+    -fx-background-color: #d4edda;
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+    -fx-border-color: #c3e6cb;
+    -fx-border-radius: 4px;
+}
+
+.alert-danger {
+    -fx-text-fill: #721c24;
+    -fx-background-color: #f8d7da;
+    -fx-padding: 10px;
+    -fx-background-radius: 4px;
+    -fx-border-color: #f5c6cb;
+    -fx-border-radius: 4px;
+}
+
+/* Container and Layout */
+.container {
+    -fx-padding: 20px;
+    -fx-alignment: center;
+}
+
+.section {
+    -fx-padding: 10px 0;
+}
