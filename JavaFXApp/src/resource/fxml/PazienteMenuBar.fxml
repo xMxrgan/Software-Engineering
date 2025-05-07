@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="10">
+    <Button text="Account" fx:id="accountButton"/>
+    <Button text="Inserisci Valori" fx:id="valoriButton"/>
+    <Button text="Inserisci Anomalie" fx:id="anomalieButton"/>
+</HBox>
