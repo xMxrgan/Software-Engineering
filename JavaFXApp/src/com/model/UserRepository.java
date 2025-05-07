@@ -15,7 +15,7 @@ public class UserRepository {
     private void refreshUserCache() {
         userCache.clear();
 
-        dbManager.executeQuery(
+        /*dbManager.executeQuery(
                 "SELECT ID, Nome, Cognome, Email, Password, Amministratre FROM User",
                 rs -> {
                     while (rs.next()) {
@@ -28,7 +28,7 @@ public class UserRepository {
                     }
                     return null;
                 }
-        );
+        );*/
     }
 
 }

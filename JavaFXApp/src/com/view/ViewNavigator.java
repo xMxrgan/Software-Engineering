@@ -11,13 +11,8 @@ import java.io.IOException;
 
 public class ViewNavigator {
 
-    private static String authenticatedUser = null;
     private static String userRole;
-
     private static Stage mainStage;
-
-    public ViewNavigator() {
-    }
 
     public static void setStage(Stage stage) {
         mainStage = stage;
@@ -31,11 +26,10 @@ public class ViewNavigator {
     @FXML
     public static void loadView(String fxmlFile) {
         try {
-            FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource("../../resource/fxml/" + fxmlFile));
+            FXMLLoader loader = new FXMLLoader(ViewNavigator.class.getResource("JavaFXApp/src/resource/fxml/" + fxmlFile));
             Parent root = loader.load();
 
             Scene scene = new Scene(root, 800, 600);
-            scene.getStylesheets().add(ViewNavigator.class.getResource("/JavaFXApp/src/resource/css/style.css").toExternalForm());
 
             mainStage.setTitle("Telemedicina");
             mainStage.setScene(scene);
