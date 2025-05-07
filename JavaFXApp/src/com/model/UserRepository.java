@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class UserRepository {
     private final DatabaseManager dbManager;
-    private Map<String, User> userCache = new HashMap<>();
+    private Map<Integer, User> userCache = new HashMap<>();
 
     public UserRepository() {
         this.dbManager = new DatabaseManager();
@@ -13,22 +13,24 @@ public class UserRepository {
     }
 
     private void refreshUserCache() {
-        userCache.clear();
-
-        /*dbManager.executeQuery(
-                "SELECT ID, Nome, Cognome, Email, Password, Amministratre FROM User",
+        userCache.clear();          /* POTREBBE NON SERVIRE*/
+        dbManager.executeQuery(
+                "SELECT ID, Nome, Cognome, Email, Password, Amministratore FROM User",
                 rs -> {
                     while (rs.next()) {
-                        String username = rs.getString("username");
-                        String password = rs.getString("password");
-                        boolean isAdmin = rs.getInt("is_admin") == 1;
+                        int ID = rs.getInt("ID");
+                        String Nome = rs.getString("nome");
+                        String Cognome = rs.getString("cognome");
+                        String Email = rs.getString("email");
+                        String Password = rs.getString("password");
+                        boolean isAdmin = rs.getBoolean("Amministratore");
 
-                        User user = new User(username, password, isAdmin);
-                        userCache.put(username, user);
+                        User user = new User(ID, Nome, Cognome, Email, Password, isAdmin);
+                        userCache.put(ID, user);
                     }
                     return null;
                 }
-        );*/
+        );
     }
 
 }

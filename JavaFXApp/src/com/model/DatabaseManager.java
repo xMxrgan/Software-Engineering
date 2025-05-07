@@ -3,38 +3,42 @@ package JavaFXApp.src.com.model;
 import java.io.File;
 import java.sql.*;
 
+@FunctionalInterface
+interface ResultSetProcessor<T> {
+    T process(ResultSet rs) throws SQLException;
+}
+
 public class DatabaseManager {
     private final String dbUrl = "jdbc:sqlite:" + "JavaFXApp/src/resource/database/Telemedicina.db";
-    String query = "SELECT ID, Nome, Cognome FROM User";
 
     public DatabaseManager() {
-        File dbFile = new File(dbUrl);
-
         try {
-            /*  connessione al DB   */
             Connection conn = DriverManager.getConnection(dbUrl);
-
-
-            PreparedStatement stmt = conn.prepareStatement(query);
-            ResultSet rs = stmt.executeQuery();
-
-            /*while (rs.next()) {
-                System.out.println("ID: " + rs.getString("ID") +
-                        ", Nome: " + rs.getString("Nome") +
-                        ", Cognome: " + rs.getString("Cognome"));
-            }*/
 
         } catch (SQLException e) {
             System.out.println("❌ Errore di connessione: " + e.getMessage());
         }
     }
 
-    /**
-     * Execute a query and process the results with a ResultSetProcessor
-     */
+
+    public <T> T executeQuery(String sql, ResultSetProcessor<T> processor, Object... params) {
+        try (Connection conn = DriverManager.getConnection(dbUrl);
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            for (int i = 0; i < params.length; i++) {
+                pstmt.setObject(i + 1, params[i]);
+            }
+            try (ResultSet rs = pstmt.executeQuery()) {
+                return processor.process(rs);
+            }
+
+        } catch (SQLException e) {
+            System.err.println("❌ Errore di esecuzione della query: " + e.getMessage());
+            return null;
+        }
+    }
 
 
     public static void main(String[] args) {
-        new DatabaseManager();
+        new UserRepository();
     }
 }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="modifica LogicalController">
+    <list default="true" id="2280270d-cc82-4567-b053-dbf887e29bc6" name="Changes" comment="cartella css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/DatabaseManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaFXApp/src/com/model/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaFXApp/src/com/model/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,13 +77,14 @@
       <recent name="$PROJECT_DIR$/JavaFXApp/src/resource/fxml" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JavaFXApp/src/resource/css" />
       <recent name="$PROJECT_DIR$/JavaFXApp/src/resource/fxml" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="JavaFXApp.src.com.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.DatabaseManager">
     <configuration name="DatabaseManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JavaFXApp.src.com.model.DatabaseManager" />
       <module name="Telemedicina" />
@@ -120,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746562022379</updated>
       <workItem from="1746562023437" duration="628000" />
-      <workItem from="1746562656989" duration="43904000" />
+      <workItem from="1746562656989" duration="46515000" />
     </task>
     <task id="LOCAL-00001" summary="librerie aggiornate, main.xml e file .sh">
       <option name="closed" value="true" />
@@ -354,7 +358,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746636818012</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="cartella css">
+      <option name="closed" value="true" />
+      <created>1746637181303</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1746637181303</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -396,6 +408,7 @@
     <MESSAGE value="file configurazione" />
     <MESSAGE value="delate file di testo" />
     <MESSAGE value="modifica LogicalController" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica LogicalController" />
+    <MESSAGE value="cartella css" />
+    <option name="LAST_COMMIT_MESSAGE" value="cartella css" />
   </component>
 </project>
