@@ -14,6 +14,5 @@ public class LoginController {
     private PasswordField passwordField;
     @FXML
     private Label statusLabel;
-    //private UserRepository userRepository;
 
 }
