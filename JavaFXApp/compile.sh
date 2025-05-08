@@ -14,4 +14,6 @@ javac \
   src/com/view/ViewNavigator.java \
   src/com/model/UserRepository.java \
   src/com/model/User.java \
-  src/com/model/DatabaseManager.java
+  src/com/model/DatabaseManager.java \
+  src/com/controller/LoginController.java \
+  src/com/controller/AdminController.java

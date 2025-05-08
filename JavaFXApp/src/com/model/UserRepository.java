@@ -40,4 +40,11 @@ public class UserRepository {
         );
     }
 
+    public User getEmail(String email) {
+        return userCache.values().stream()
+                .filter(user -> user.getEmail().equals(email))
+                .findFirst()
+                .orElse(null);
+    }
+
 }

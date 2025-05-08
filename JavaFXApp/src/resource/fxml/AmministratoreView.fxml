@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaFXApp.src.com.controller.AdminController">
+
+    <top>
+        <HBox spacing="20" alignment="CENTER_LEFT">
+            <Button text="Aggiungi anagrafica paziente" onAction="#addPaziente" />
+            <Button text="Aggiungi anagrafica dottore" onAction="#addDiabetologo" />
+            <Button text="Logout" id="logoutButton" onAction="#navigateToLogin" />
+        </HBox>
+    </top>
+
+    <!-- ANAGRAFICA COMUNE -->
+    <center>
+        <VBox fx:id="formContainer" spacing="10" alignment="CENTER" visible="false">
+            <Label id="formTitle" text="Inserisci dati" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+            <TextField fx:id="nomeField" promptText="Nome" />
+            <TextField fx:id="cognomeField" promptText="Cognome" />
+            <TextField fx:id="emailField" promptText="Email" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Button text="Salva" onAction="#handleSave" />
+            <Label fx:id="statusLabel" textFill="red" visible="false" />
+        </VBox>
+    </center>
+
+</BorderPane>

@@ -12,12 +12,16 @@ public class Main extends Application {
 
     private static UserRepository userRepository = new UserRepository();
 
+    public static UserRepository getUserRepository() {
+        return userRepository;
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
 
         ViewNavigator.setStage(stage);
         ViewNavigator.loadView("LoginView.fxml");
-        System.out.println(userRepository.toString());
+
     }
 
     public static void main(String[] args) {

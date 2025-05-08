@@ -18,6 +18,9 @@
             <PasswordField fx:id="passwordField" promptText="Inserisci la tua password"/>
         </VBox>
 
-        <Button text="Accedi" maxWidth="100" fx:id="loginButton" onAction="#navigateToManyView" />
+        <Button text="Accedi" maxWidth="100" onAction="#navigateToDashboard" />
+
+        <Label fx:id="statusLabel" textFill="red" visible="false" />
+
     </VBox>
 </StackPane>
